@@ -1,0 +1,34 @@
+.resizable-table {
+    width: min-content !important;
+    max-width: none !important;
+}
+
+td, th{
+    overflow: hidden;
+    white-space: nowrap;
+    /*white-space: normal;*/
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.rc-handle-container {
+    position: relative;
+}
+.rc-handle {
+    position: absolute;
+    /*position: relative;*/
+    width: 7px;
+    cursor: col-resize;
+    margin-left: -3px;
+    z-index: 2;
+}
+table.rc-table-resizing {
+    cursor: col-resize;
+}
+table.rc-table-resizing thead,
+table.rc-table-resizing thead > th,
+table.rc-table-resizing thead > th > a {
+    cursor: col-resize;
+}
+
