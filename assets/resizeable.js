@@ -185,7 +185,7 @@ function getCookie(name) {
 
         ResizableColumns.prototype.fixNotSetWidths = function () {
             $('th').each(function () {
-                if (this.style.width === '') {
+                if (!this.style.width.includes('px')) {
                     this.style.width = '' + $(this).width() + 'px';
                 }
             });
