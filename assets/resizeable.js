@@ -158,7 +158,7 @@ function getCookie(name) {
                 columnsWidth[$(this).attr('data-col-seq')] = {'width': $(this).width()};
             });
             if (resizeableOptions.saveTo == 'path') {
-                $.get(resizeableOptions.url,
+                $.post(resizeableOptions.url,
                     $.extend({options: columnsWidth}, resizeableOptions.urlOptions),
                     function (res) {
                     }
