@@ -10,6 +10,8 @@
 
 .resizable-table {
     width: min-content !important;
+    width: -moz-min-content !important;
+    min-width: -webkit-min-content !important;
     max-width: none !important;
 }
 
@@ -41,4 +43,3 @@ table.rc-table-resizing thead > th,
 table.rc-table-resizing thead > th > a {
     cursor: col-resize;
 }
-
