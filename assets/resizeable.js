@@ -128,7 +128,7 @@ function getCookie(name) {
             this.$tableHeaders.each((function (_this) {
                 return function (i, el) {
                     var $handle;
-                    if (_this.$tableHeaders.eq(i).length === 0 || (_this.$tableHeaders.eq(i).attr('data-noresize') != null) || (_this.$tableHeaders.eq(i + 1).attr('data-noresize') != null)) {
+                    if (_this.$tableHeaders.eq(i).length === 0 || (_this.$tableHeaders.eq(i).attr('data-noresize') != null)) {
                         return;
                     }
                     $handle = $("<div class='rc-handle' />");
