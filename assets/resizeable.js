@@ -155,7 +155,7 @@ function getCookie(name) {
         ResizableColumns.prototype.saveColumnWidths = function () {
             var columnsWidth = {};
             $('th').each(function () {
-                columnsWidth[$(this).attr('data-col-seq')] = {'width': $(this).width()};
+                columnsWidth[$(this).attr('data-col-seq')] = {'width': this.style.width};
             });
             if (resizeableOptions.saveTo == 'path') {
                 $.post(resizeableOptions.url,
